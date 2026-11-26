@@ -13,6 +13,15 @@ Editable grading scale, retakes, a goal planner, Arabic and English with full RT
   <img src="docs/mobile-en-planner.png" width="230" alt="Goal planner and what-if slider">
 </p>
 
+## Screenshots
+
+Captured from the live site (https://yousefkhames.github.io/moaadel/).
+
+<p>
+  <img src="docs/screenshots/live-desktop.png" alt="moaadel desktop view" width="640">
+  <img src="docs/screenshots/live-mobile.png" alt="moaadel mobile view" width="200">
+</p>
+
 ## Why
 
 Most GPA calculators assume one fixed scale and one fixed rule set. Egyptian faculties do not all agree on grade cut-offs, points, retake rules or honors levels. Moaadel starts from a typical 4.0 credit-hour scale and lets you change every number to match your faculty bylaws.
