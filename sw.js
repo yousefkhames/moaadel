@@ -1,5 +1,5 @@
 /* Network first, cache fallback, so the app opens offline after one visit. */
-const CACHE = 'moaadel-v1';
+const CACHE = 'moaadel-v2';
 const FILES = ['./', 'index.html', 'style.css', 'calc.js', 'i18n.js', 'app.js', 'assets/logo.svg', 'manifest.webmanifest'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {

@@ -57,8 +57,9 @@ Plain HTML, CSS and JavaScript. No framework, no build step, no dependencies, no
 - `i18n.js`: Arabic and English strings
 - `app.js`: UI, state, localStorage
 - `sw.js` and `manifest.webmanifest`: offline support and installability
-- `tests/calc.test.js`: 22 unit tests (Node's built-in test runner)
+- `tests/calc.test.js`: 23 unit tests (Node's built-in test runner)
 - `tests/e2e.mjs`: 54 real-browser checks driven through Chrome DevTools, including the live site
+- `tests/flow.mjs`: 12 data-flow checks (sample, edge inputs, JSON export, wipe, import, reload, print view, no overflow). Needs `npm i puppeteer-core`.
 
 ## Run and test
 

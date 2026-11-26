@@ -199,3 +199,9 @@ test('decimal comma input is accepted', () => {
   assert.equal(C.num('2,5'), 2.5);
   assert.ok(isNaN(C.num('')));
 });
+
+// round 2: Arabic-Indic digits and decimal separator in imported or pasted values
+{
+  const test2 = require('node:test'); const assert2 = require('node:assert/strict'); const C2 = require('../calc.js');
+  test2('num() reads Arabic-Indic digits', () => { assert2.equal(C2.num('٣'), 3); assert2.equal(C2.num('٣٫٥'), 3.5); assert2.equal(C2.num('3,5'), 3.5); assert2.ok(isNaN(C2.num('abc'))); });
+}

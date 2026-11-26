@@ -69,7 +69,7 @@
 
   function num(v) {
     if (v === null || v === undefined || v === '') return NaN;
-    var n = typeof v === 'number' ? v : parseFloat(String(v).replace(',', '.'));
+    var n = typeof v === 'number' ? v : parseFloat(String(v).replace(/[\u0660-\u0669]/g, function (d) { return d.charCodeAt(0) - 1632; }).replace(/[\u066B,]/g, '.'));
     return isFinite(n) ? n : NaN;
   }
 
