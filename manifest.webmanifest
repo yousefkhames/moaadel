@@ -1,0 +1,11 @@
+{
+  "name": "Moaadel",
+  "short_name": "Moaadel",
+  "description": "GPA and credit-hours calculator for Egyptian universities",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#12343b",
+  "icons": [{ "src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

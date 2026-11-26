@@ -1,0 +1,13 @@
+{
+  "name": "moaadel",
+  "version": "1.0.0",
+  "description": "GPA and credit-hours calculator for Egyptian universities. Static, client-side, Arabic and English.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "serve": "python3 -m http.server 8765",
+    "e2e": "node tests/e2e.mjs http://127.0.0.1:8765/",
+    "shots": "node tests/shots.mjs http://127.0.0.1:8765/ --shots docs"
+  }
+}

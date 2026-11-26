@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moaadel | GPA &amp; credit-hours calculator</title>
+<meta name="description" content="Moaadel: a free GPA and credit-hours calculator for Egyptian universities, with an editable grading scale, retakes, a goal planner, Arabic and English.">
+<meta name="theme-color" content="#12343b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand">
+    <img src="assets/logo.svg" width="40" height="40" alt="">
+    <div>
+      <h1 id="app-name">Moaadel</h1>
+      <p id="app-tagline" class="sub"></p>
+    </div>
+  </div>
+  <div class="tools">
+    <button id="btn-theme" class="pill" type="button" aria-label="Theme"></button>
+    <button id="btn-lang" class="pill" type="button" lang="ar"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-live="polite">
+    <div class="gauge" role="img" id="gauge-wrap">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="g-track" cx="60" cy="60" r="52"></circle>
+        <circle class="g-bar" id="g-bar" cx="60" cy="60" r="52" transform="rotate(-90 60 60)"></circle>
+      </svg>
+      <div class="g-center">
+        <div id="g-value" class="g-value">0.00</div>
+        <div id="g-max" class="g-max"></div>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-label" id="hero-label"></div>
+      <div id="honors" class="honors"></div>
+      <dl class="stats">
+        <div><dt id="st-counted-l"></dt><dd id="st-counted">0</dd></div>
+        <div><dt id="st-earned-l"></dt><dd id="st-earned">0</dd></div>
+        <div><dt id="st-sems-l"></dt><dd id="st-sems">0</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+
+  <section id="panel-semesters" class="panel" role="tabpanel"></section>
+  <section id="panel-planner" class="panel" role="tabpanel" hidden></section>
+  <section id="panel-scale" class="panel" role="tabpanel" hidden></section>
+</main>
+
+<footer class="foot"><p id="footer-text"></p></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="modal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-msg">
+    <p id="modal-msg"></p>
+    <div class="modal-actions">
+      <button id="modal-no" class="btn ghost" type="button"></button>
+      <button id="modal-yes" class="btn danger" type="button"></button>
+    </div>
+  </div>
+</div>
+<input id="file-input" type="file" accept="application/json,.json" hidden>
+<script src="calc.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

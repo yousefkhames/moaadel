@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Moaadel logo">
+  <rect width="128" height="128" rx="30" fill="#12343b"/>
+  <circle cx="64" cy="64" r="40" fill="none" stroke="#2a5560" stroke-width="10"/>
+  <circle cx="64" cy="64" r="40" fill="none" stroke="#f0a83a" stroke-width="10" stroke-linecap="round" stroke-dasharray="205 251" transform="rotate(-90 64 64)"/>
+  <path d="M46 66l12 12 25-27" fill="none" stroke="#f6f1e7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
